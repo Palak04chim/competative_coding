@@ -1,0 +1,148 @@
+#WAP to accept days and check working days and weekend
+day = input("Enter the day: ")
+
+if day == "Saturday" or day == "Sunday":
+    print("It is Weekend")
+else:
+    print("It is Working Day")
+
+output:
+Enter the day: monday
+It is Working Day
+
+#WAP to accept three paper marks and calculate  total marks,percentage and check if percentage is greater than or equal to 60 the he/she is eligible for placement
+m1 = int(input("Enter marks of Paper 1: "))
+m2 = int(input("Enter marks of Paper 2: "))
+m3 = int(input("Enter marks of Paper 3: "))
+total = m1 + m2 + m3
+percentage = total / 3print("Total Marks =", total)
+print("Percentage =", percentage)
+if percentage >= 60:
+    print("Eligible for Placement")
+else:
+    print("Not Eligible for Placement")
+
+output:Enter marks of Paper 1: 16
+Enter marks of Paper 2: 17
+Enter marks of Paper 3: 16
+Total Marks = 49
+Percentage = 16.333333333333332
+Not Eligible for Placement
+
+
+
+#   WAP to accept 5 number in 5 different var and check maximum value and print using simple if
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+d = int(input("Enter fourth number: "))
+e = int(input("Enter fifth number: "))
+max = a
+if b > max:
+    max = b
+if c > max:
+    max = c
+if d > max:
+    max = d
+if e > max:
+    max = e
+print("Maximum number is:", max)
+OUTPUT:
+Enter first number: 5
+Enter second number: 6
+Enter third number: 7
+Enter fourth number: 8
+Enter fifth number: 9
+Maximum number is: 9
+num = int(input("Enter a number: "))
+if num > 0:
+    if num % 2 == 0:
+        print("Positive Even")
+    else:
+        print("Positive Odd")
+else:
+    if num == 0:
+        print("Number is Zero")
+    else:
+        print("Negative Number")
+OUTPUT:
+Enter a number: 3
+Positive Odd
+for i in range(2, 10, 2):
+    print(i)
+for i in range(1,11):
+    print(i*2)
+
+
+foword = "prashant"
+count = 0
+for i in foword:
+    if i in "aeiou":
+        count = count + 1
+
+print("Number of vowels:", count)
+
+
+
+ch = input("Enter a character: ")
+if ch in "aeiouAEIOU":
+    print("It is a vowel")
+else:
+    print("It is a consonant")
+
+s = "palak"
+result = ""
+
+for i in s:
+    if i not in result:
+        result = result + i
+
+print("Unique string:", result)
+
+x=['A','B','C']
+y=['A','B','C']
+z=[1,2,3,4]
+print(x==y)
+print(y==z)
+print(x==z)
+
+numbers = [2,5,8,4,1,9,8]
+
+for i in numbers:
+    if i % 2 == 0:
+        print(i, "is Even")
+    else:
+        print(i, "is Odd")
+
+numbers = [2,5,8,4,1,9,8]
+total = 0
+count = 0
+
+for i in numbers:
+    total = total + i
+    count = count + 1
+
+print("Sum =", total)
+print("Count =", count)
+
+
+name = "palak"
+i = 0
+
+for x in name:
+    print("The character present at index no", i, "value =", x)
+    i = i + 1
+
+ch = input("Enter a character: ")
+x = ord(ch)
+
+if x >= 65 and x <= 90:
+    print("Uppercase letter")
+elif x >= 97 and x <= 122:
+    print("Lowercase letter")
+elif x >= 48 and x <= 57:
+    print("Digit")
+else:
+    print("Special symbol")
+    
+
