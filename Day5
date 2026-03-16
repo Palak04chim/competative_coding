@@ -1,0 +1,164 @@
+#function
+def msg():
+    print("hello world")
+    msg()
+
+def msg():
+   val1=int(input("Enter first value:"))
+   val2=int(input("Enter first value:"))
+   print(val1+val2)
+msg()
+
+def msg():
+   val1=int(input("Enter first value:"))
+   val2=int(input("Enter first value:"))
+  # print(val1+val2)
+   return val1+val2
+print(msg())
+
+def msg():
+   val1=int(input("Enter first value:"))
+   val2=int(input("Enter first value:"))
+  # print(val1+val2)
+   return val1+val2
+res=msg()
+print("Result=",res)
+
+def msg():
+   val1=int(input("Enter first value:"))
+   val2=int(input("Enter first value:"))
+  # print(val1+val2)
+   #return val1+val2
+   sum=val1+val2
+   mul=val1*val2
+   sub=val1-val2
+   div=val1/val2
+   return sum,mul,sub,div
+res=msg()
+print("Result=",res)
+
+#positional argument
+ def personalInfo(fname, lname):
+print("First Name:", fname)
+ print("Last Name:", lname)
+personalInfo("Palak", "chimurkar")
+
+#keyword argument
+def personalInfo(fname, lname):
+    print("First Name:", fname)
+    print("Last Name:", lname)
+personalInfo(fname="Palak", lname="Chimurkar")
+
+#default argument
+def personalInfo(fname, lname="Chimurkar"):
+    print("First Name:", fname)
+    print("Last Name:", lname)
+personalInfo("Palak")          # uses default lname
+personalInfo("Palak", "Patil") # overrides default lname
+
+# variable length argument
+def cities(*city):
+    for c in city:
+        print(c)
+cities("Nagpur", "Pune", "Mumbai", "Delhi")
+
+def login():
+    username=input("Enter useraname:")
+    password=input("Enter  password:")
+login()
+
+def login():
+    username = input("Enter username: ")
+    password = input("Enter password: ")
+if username == "admin" and password == "1234":
+        print("Login successful")
+    else:
+        print("Invalid username or password")
+login()
+
+myList=[4,2,7,8,5,4,1]
+def searchvalue(target):
+    for i in range(len(myList)):
+        print(mylist[i])
+target=7
+searchvalue(target)
+
+myList = [4,2,7,8,5,4,1]
+
+def searchvalue(target):
+    for i in range(len(myList)):
+        if myList[i] == target:
+            print("Value found at index", i)
+            return
+    else:
+        print("Value not found")
+target = 7
+searchvalue(target)
+
+myList = [4, 2, 7, 8, 5, 4, 1]
+
+def sumList():
+    total = 0
+    for i in range(len(myList)):
+        total = total + myList[i]
+    return total
+result = sumList()
+print("Sum of all elements:", result)
+def solveMeFirst(a, b):
+    return a + b
+num1 = int(input())
+num2 = int(input())
+res = solveMeFirst(num1, num2)
+print(res)
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'simpleArraySum' function below.
+#
+
+def simpleArraySum(ar):
+    total = 0
+    for i in ar:
+        total = total + i
+    return total
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+ar_count = int(input().strip())
+ar = list(map(int, input().rstrip().split()))
+result = simpleArraySum(ar)
+fptr.write(str(result) + '\n')
+fptr.close()
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+def compareTriplets(a, b):
+    alice = 0
+    bob = 0
+
+    for i in range(3):
+        if a[i] > b[i]:
+            alice += 1
+        elif a[i] < b[i]:
+            bob += 1
+
+    return [alice, bob]
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+a = list(map(int, input().rstrip().split()))
+b = list(map(int, input().rstrip().split()))
+result = compareTriplets(a, b)
+fptr.write(' '.join(map(str, result)))
+fptr.write('\n')
+fptr.close()
+
