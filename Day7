@@ -1,0 +1,46 @@
+name = 'prashant*is*a*good*programmar'
+newname = ''
+val = ''
+for ch in name:
+    if ch == '*':
+        val += ch
+    else:
+        newname += ch
+result = val + newname
+print(result)
+
+myList = []
+N = int(input("Enter the value of N: "))
+for i in range(N):
+    num = int(input("Enter number: "))
+    myList.append(num)
+print(myList)
+
+myList = []
+
+N = int(input("Enter the value of N: "))
+
+for i in range(N):
+    num = int(input("Enter number: "))
+    myList.append(num)
+sum = 0
+for j in range(len(myList)):
+    if j + 1 < len(myList):
+        sum += abs(myList[j] - myList[j + 1])
+print(myList)
+
+L = int(input())
+N = int(input())
+
+for i in range(N):
+    W, H = map(int, input().split())
+    
+    if W < L or H < L:
+        print("UPLOAD ANOTHER")
+    elif W == H:
+        print("ACCEPTED")
+    else:
+        print("CROP IT") 
+
+
+print(sum)
